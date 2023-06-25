@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@400;500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@400;500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+    --grey: #d8d9db;
+    --white: #ffffff;
+    --smallest-space: 20px;
+    --roundedges: 15px;
+    --shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    --btnpad: 5px;
+    /* --black: #234f61; */
+    --black: #3d4fb3;
+    --blue: #2e8eda;
+    --text: #000000;
+    --normal: 1.4rem;
+    --light-blue: #3d4fb3;
+
+    --light-grey: #f8f8f8;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+/* body {
+    font-family: 'Roboto', sans-serif;
+} */
+.background {
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--light-grey);
+}
+
+.big-display-1 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+/* .roboto {
+    font-family: 'Roboto', sans-serif;
+} */
+
+.ubuntu,
+.ubuntu li {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* EDEDEF */
+.background {
+    background-color: var(--lightgrey);
+}
+
+.top-pad {
+    padding-top: 6rem;
+}
+
+.lightblue {
+    color: var(--light-blue) !important;
+}
+
+.darkblue {
+    color: #3e52b6;
+}
+.darkblue a {
+    color: #3e52b6;
+}
+.accent {
+    color: var(--blue);
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+.blue {
+    color: var(--blue) !important;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* p {
+    font-size: 2rem;
+    font-weight: 400;
+} */
+a:link {
+    text-decoration: none;
+}
+
+.inverse {
+    padding: var(--btnpad);
+    font-size: 1.025rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: var(--light-blue);
+    cursor: pointer;
+    outline: solid 2px var(--light-blue);
+    outline-offset: -2px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.inverse:hover {
+    background-color: var(--blue);
+    outline: solid 2px var(--blue);
+}
+
+.inverse.whitebtn {
+    color: black;
+    background-color: var(--white);
+    outline: solid 2px var(--light-blue);
+    outline-offset: -2px;
+}
+
+.inverse.whitebtn:hover {
+    color: var(--blue);
+    outline: solid 2px var(--blue);
+}
+
+.btnorange {
+    color: #fff;
+    text-align: center;
+    background-color: #fa703e;
+    border: 0.125rem solid #fa703e;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    transition: border 0.2s, background-color 0.2s;
+}
+
+.square-button2 {
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.square-button2:hover {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: black;
+    box-sizing: border-box;
+}
+
+.square-button2.inverse {
+    margin-top: 10px;
+    border: 2px solid var(--light-blue);
+    background-color: white;
+    color: black;
+}
+
+/* .square-button2.inverse:hover {
+    margin-top: 10px;
+    border: 2px solid var(--light-blue);
+    background-color: var(--blue);
+    color: white;
+} */
+
+.link-text {
+    font-size: 1.15rem;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.link-text:hover {
+    color: var(--blue);
+}
+
+.link {
+    padding: 10px 20px 10px 20px;
+}
+
+.text-selector {
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.semi-big-text-pad {
+    padding-top: 3rem;
+}
+
+.semi-big-text {
+    font-size: 1.5rem;
+    color: var(--text);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.semi-big-text.darkblue {
+    color: var(--black);
+}
+
+.text-normal {
+    font-size: 1.025rem;
+    line-height: 25px;
+    color: var(--text);
+}
+
+.text-selector {
+    color: var(--text);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rounded-img {
+    border-radius: 0px;
+}
+
+.text-medium {
+    font-size: 1.2rem;
+    color: var(--text);
+    font-weight: 500;
+}
+.medium-text {
+    font-size: 1.2rem;
+    color: var(--text);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mr-1 {
+    padding-right: 10px !important;
+}
+
+.cursor-unset {
+    cursor: unset;
+}
+.cursor-grab {
+    cursor: grab;
+}
+.cursor-grabbing {
+    cursor: grabbing;
+}
+
+.navbar.hidden {
+    display: none;
+}
+
+.img-container {
+    border: solid 2px var(--grey);
+}
+
+.hover-overlay {
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.hover-overlay img {
+    border-radius: 5px;
+    display: block;
+}
+
+/* .hover-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-overlay:hover::before {
+    opacity: 0.5;
+} */
+
+.hover-overlay:hover img {
+    border: 3px solid var(--blue);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.help {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+.text-big {
+    font-size: 1.95rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .link {
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .big-display-1 {
+        font-size: 2.5rem;
+    }
+    .text-big {
+        font-size: 1.5rem;
+    }
+    .medium-text {
+        font-size: 1.1rem;
+    }
+
+    .link-text {
+        font-size: 1.1rem;
+    }
+
+    .text-normal {
+        font-size: 1rem;
+    }
+    .semi-big-text {
+        font-size: 1.35rem;
+    }
+}

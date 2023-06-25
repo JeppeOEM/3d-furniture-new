@@ -1,0 +1,66 @@
+<template class="">
+    <div class="background overflow">
+        <navbar></navbar>
+        <div class="container">
+            <Configuration></Configuration>
+            <h1 class="big-display-1 top-pad darkblue ubuntu">Product List</h1>
+
+            <div class="row d-flex justify-content-center">
+                <div class="product-info d-flex justify-content-between">
+                    <!-- <p class="text-medium">Product</p>
+                <p class="text-medium row2">Fabric</p> -->
+                    <!-- <p class="text-medium">Fabric</p>
+                <p class="text-medium row4">Color</p>
+                <p class="text-medium">Price</p> -->
+                </div>
+
+                <div class="" v-for="item in populatedList" :key="item.id">
+                    <div class="product-info d-flex justify-content-between">
+                        <div class="d-flex item-details">
+                            <div class="img-wrapper">
+                                <img
+                                    class="list-img"
+                                    :src="item.url"
+                                    alt="Furniture component"
+                                />
+                            </div>
+                            <div class="text-normal marginsmall">
+                                <span>
+                                    <span class="fw-semibold">
+                                        Modular Sofa Connection</span
+                                    ><br />
+                                    {{ item.type }} {{ item.category }}<br />
+                                    <span class=""
+                                        >{{ item.fabricColor.color }}&nbsp;
+                                    </span>
+                                    <span class="">
+                                        {{ item.fabricColor.texture }}
+                                    </span> </span
+                                ><br />
+                            </div>
+
+                            <div class="text-small margin">
+                                <span
+                                    >W: 160cm H: 120cm D: 99cm<br />Dispatch
+                                    time:<br />
+                                    <span class="fw-semibold">
+                                        3-5 working days</span
+                                    ></span
+                                >
+                            </div>
+                        </div>
+
+                        <p class="text-normal margin fw-semibold">
+                            {{ item.price }} DKK
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <p class="medium-text fw-semibold">
+                        Total Price: <span class="">{{ totalPrice }} DKK</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

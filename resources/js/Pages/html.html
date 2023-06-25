@@ -1,0 +1,93 @@
+<template>
+    <div class="modal-overlay d-flex align-items-center justify-content-center">
+        <div
+            class="container-fluid gx-0 container-lg modal d-flex align-items-center justify-content-center"
+        >
+            <div class="row"></div>
+            <div class="row inner gx-0">
+                <p class="close-btn medium-text help" @click="closeModal">×</p>
+
+                <div class="page row p-lg-4 gx-0" v-if="page === 1">
+                    <div
+                        class="col-12 col-lg-8 vid-size d-flex align-items-center justify-content-center"
+                    >
+                        <div class="media-wrapper">
+                            <video :src="vid1" controls></video>
+                        </div>
+                    </div>
+                    <div class="col-auto col-12 col-lg-4">
+                        <p class="medium-text pageNumber darkblue">
+                            {{ page }} out of 2
+                        </p>
+                        <h3>Select, rotate and delete</h3>
+                        <div class="list">
+                            <li>Choose a fabric from the top left corner</li>
+                            <li>Click to add a module</li>
+                            <li>
+                                Rotate or delete module the latest added
+                                furniture in the bottom menu
+                            </li>
+                            <li>
+                                Click on diffrent model if you want to select it
+                                to delete or rotate instead
+                            </li>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div
+                                class="btnBox d-flex align-items-center justify-content-center"
+                            >
+                                <span @click="closeModal" class="skipBtn"
+                                    >Skip guide</span
+                                >
+                                <span class="inverse" @click="page = 2"
+                                    >Next</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page row p-lg-4 gx-0" v-if="page === 2">
+                    <div
+                        class="col-12 col-lg-8 vid-size d-flex align-items-center justify-content-center"
+                    >
+                        <div class="media-wrapper">
+                            <video :src="vid2" controls></video>
+                        </div>
+                    </div>
+                    <div class="col-auto col-12 col-lg-4 list-col">
+                        <p class="medium-text pageNumber">
+                            {{ page }} out of 2
+                        </p>
+                        <h3>Move the view</h3>
+                        <div class="list">
+                            <li>
+                                Press the left mouse button down and move the
+                                mouse to rotate the view
+                            </li>
+                            <li>
+                                Zoom in and out by scrolling on the mouse wheel,
+                                or on mobile by using two fingers and seperate
+                                them
+                            </li>
+                            <li>
+                                Hold shift down and press the left mouse button
+                                to grab the floor and move it
+                            </li>
+                        </div>
+                        <div
+                            class="btnBox d-flex align-items-center justify-content-center"
+                        >
+                            <span class="inverse" @click="page = 2">
+                                Next
+                            </span>
+
+                            <span class="inverse" @click="closeModal"
+                                >Start Building
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
